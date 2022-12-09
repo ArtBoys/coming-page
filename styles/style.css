@@ -2,4 +2,31 @@
   padding: 0;
   margin: 0;
 }
+/* ------ BREAKPOINTS CUSTOM---- */
+/* ------ PRIMARY COLORS---- */
+/* ------ NEUTRAL COLORS---- */
+/* ------ ROOT---- */
+:root {
+  --white: hsl(0, 0%, 100%);
+  --lightViolet: hsl(270, 3%, 87%);
+  --darkViolet: hsl(279, 6%, 55%);
+  --veryDarkViolet: hsl(278, 68%, 11%);
+}
+body {
+  font-size: 18px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+}
+/* ------ BOOTSTRAP OVERRIDE---- */
+.btn {
+  padding: 18px 30px;
+}
+/* ------ GLOBAL VARIABLES ---- */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
 /*# sourceMappingURL=style.css.map */

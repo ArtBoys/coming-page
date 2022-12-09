@@ -2,3 +2,66 @@
   padding: 0;
   margin: 0;
 }
+
+/* ------ BREAKPOINTS CUSTOM---- */
+@xlBreakpoint: 1600px;
+@lgBreakpoint: 1262px;
+@mdBreakpoint: 868px;
+@smBreakpoint: 576px;
+@xsBreakpoint: 0;
+
+
+@fontPrimary: 'Space Grotesk', sans-serif;
+
+
+
+
+/* ------ PRIMARY COLORS---- */
+@red: hsl(0, 100%, 66%);
+@gradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+
+/* ------ NEUTRAL COLORS---- */
+
+@white: hsl(0, 0%, 100%);
+@lightViolet: hsl(270, 3%, 87%);
+@darkViolet: hsl(279, 6%, 55%);
+@veryDarkViolet: hsl(278, 68%, 11%);
+
+/* ------ ROOT---- */
+:root {
+  --white: @white;
+  --lightViolet: @lightViolet;
+  --darkViolet: @darkViolet;
+  --veryDarkViolet: @veryDarkViolet;
+}
+
+body {
+  font-size: 18px;
+  font-family: @fontPrimary;
+  font-weight: 500;
+}
+
+
+
+
+
+/* ------ BOOTSTRAP OVERRIDE---- */
+
+.btn {
+  padding: 18px 30px;
+}
+.btn-primary {
+
+}
+
+
+
+/* ------ GLOBAL VARIABLES ---- */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
