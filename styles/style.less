@@ -14,8 +14,6 @@
 @fontPrimary: 'Space Grotesk', sans-serif;
 
 
-
-
 /* ------ PRIMARY COLORS---- */
 @red: hsl(0, 100%, 66%);
 @gradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
@@ -39,12 +37,7 @@ body {
   font-size: 18px;
   font-family: @fontPrimary;
   font-weight: 500;
-  background: url("../images/bg-main-desktop.png") no-repeat;
-  height: 100%;
 }
-
-
-
 
 
 /* ------ BOOTSTRAP OVERRIDE---- */
@@ -52,16 +45,100 @@ body {
 .btn {
   padding: 18px 30px;
 }
+
 .btn-primary {
+  font-family: @fontPrimary;
+  background: @veryDarkViolet;
+  color: @white;
+  border-radius: 12px;
 
 }
 
 /* ------ GLOBAL VARIABLES ---- */
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-  a {
-    color: hsl(228, 45%, 44%);
+.InteractiveCard {
+  background: url("../images/bg-main-desktop.png") no-repeat, left top;
+  background-size: contain;
+  height: 100vh;
+  color: @white;
+  &__wrapper {
+    display: flex;
+    gap: 5rem;
+    max-width: @xlBreakpoint;
+    margin: 0 auto;
+    height: 100%;
   }
+
+  &__view {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    padding-left: 8rem;
+  }
+  &__form {
+    display: flex;
+    align-items: center;
+    color: @veryDarkViolet;
+  }
+  &__face {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background: url("../images/bg-card-front.png") no-repeat;
+    background-size: cover;
+    width: 450px;
+    height: 230px;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 15px 15px 35px rgba(0, 0, 0, 0.15);
+
+  }
+  &__faceDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    .number {
+      font-size: 40.5px;
+      font-weight: 500;
+      letter-spacing: 2px;
+    }
+    .safecode {
+      display: flex;
+      justify-content: space-between;
+    }
+    .name {
+      font-size: 20px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+    .data {
+      font-size: 20px;
+      letter-spacing: 3px;
+    }
+  }
+
+  &__back {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    background: url("../images/bg-card-back.png") no-repeat;
+    background-size: cover;
+    width: 450px;
+    height: 230px;
+    margin-left: 6rem;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 15px 15px 35px rgba(0, 0, 0, 0.015);
+  }
+  &__backCode {
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding-right: 1rem;
+  }
+
 }
+
+
